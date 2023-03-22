@@ -44,9 +44,9 @@ body::-webkit-scrollbar-thumb:hover {
 #nav ul {
     display: flex;
     list-style-type: none;
-    gap: 3%;
     margin-left: 3%;
-    justify-content: left;
+    gap: 10%;
+    justify-content: center;
 }
 
 #nav ul li a {
@@ -206,124 +206,6 @@ body::-webkit-scrollbar-thumb:hover {
     border-bottom: 1px solid #000;
 }
 /*Fim do footer*/
-
-/*Inicio de produtos*/
-
-.container {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1%;
-    padding: 1%;
-    box-sizing: border-box;
-}
-
-.img {
-    object-fit: contain;
-    width: 60%;
-    margin: 0px auto;
-    background-color: rgb(204, 204, 204);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
-}
-
-.btn-comprar {
-    display: inline-block;
-    margin: 1%;
-    cursor: pointer;
-    background-color: #29b0d2;
-    border: none;
-    font-size: 1.5em;
-    border-radius: 2px;
-    width: 60%;
-    padding: 1%;
-    transition: all 0.3s ease;
-}
-
-.btn-comprar:hover {
-    background-color: #2cb3d5a8;
-}
-
-.btn-carrinho {
-    display: inline-block;
-    margin: 1%;
-    cursor: pointer;
-    background-color: #000;
-    color: #ffffff;
-    font-size: 1.5em;
-    border-radius: 2px;
-    border: none;
-    width: 60%;
-    padding: .5%;
-    transition: all 0.3s ease;
-}
-
-.btn-carrinho:hover {
-    background-color: #000000d6;
-}
-
-.descricao {
-    font-size: 1.2em;
-    margin-top: 5%;
-}
-
-.preco {
-    color: rgb(0, 157, 255);
-    font-size: 1.5em;
-    margin: 1%;
-    font-weight: bold;
-}
-
-#banner-2 {
-    background-image: url('../img/index/banner2.png');
-    width: 100%;
-    height: calc(100vh / 2);
-    background-size: cover;
-    margin-top: 4%;
-    padding: 5%;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.399);
-}
-
-#banner-2 h1 {
-    font-size: 5em;
-    text-align: left;
-}
-
-#banner-2 p {
-    font-size: 1.5em;
-}
-
-#cachorro {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 2%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#produtos {
-    width: 90%;
-    margin: 0px auto;
-}
-
-#produtos h1 {
-    font-size: 2.6em;
-    padding: 7%;
-}
-
-
-/*Fim de produtos*/
 
 /*Inicio de produtos*/
 
