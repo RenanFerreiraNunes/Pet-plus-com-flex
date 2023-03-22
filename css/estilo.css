@@ -29,6 +29,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*Inicio da navegação*/
 #nav {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 6vh;
     line-height: 6vh;
@@ -41,10 +43,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 #nav ul {
     display: flex;
-    justify-content: center;
     list-style-type: none;
     gap: 3%;
     margin-left: 3%;
+    justify-content: left;
 }
 
 #nav ul li a {
@@ -85,7 +87,7 @@ body::-webkit-scrollbar-thumb:hover {
 #portrait {
     border-radius: 10px;
     margin: 2%;
-    width: 100%;
+    width: 40%;
     height: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
 }
@@ -322,3 +324,345 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 /*Fim de produtos*/
+
+/*Inicio de produtos*/
+
+.container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.img {
+    object-fit: contain;
+    width: 60%;
+    margin: 0px auto;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
+}
+
+.btn-comprar {
+    display: inline-block;
+    margin: 1%;
+    cursor: pointer;
+    background-color: #29b0d2;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 2px;
+    width: 60%;
+    padding: 1%;
+    transition: all 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #2cb3d5a8;
+}
+
+.btn-carrinho {
+    display: inline-block;
+    margin: 1%;
+    cursor: pointer;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 1.5em;
+    border-radius: 2px;
+    border: none;
+    width: 60%;
+    padding: .5%;
+    transition: all 0.3s ease;
+}
+
+.btn-carrinho:hover {
+    background-color: #000000d6;
+}
+
+.descricao {
+    font-size: 1.2em;
+    margin-top: 5%;
+}
+
+.preco {
+    color: rgb(0, 157, 255);
+    font-size: 1.5em;
+    margin: 1%;
+    font-weight: bold;
+}
+
+#banner-2 {
+    background-image: url('../img/index/banner2.png');
+    width: 100%;
+    height: calc(100vh / 2);
+    background-size: cover;
+    margin-top: 4%;
+    padding: 5%;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.399);
+}
+
+#banner-2 h1 {
+    font-size: 5em;
+    text-align: left;
+}
+
+#banner-2 p {
+    font-size: 1.5em;
+}
+
+#cachorro {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#gato {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#produtos {
+    width: 90%;
+    margin: 0px auto;
+}
+
+#produtos h1 {
+    font-size: 2.6em;
+    padding: 7%;
+}
+
+
+/*Fim de produtos*/
+
+/*inicio de galeria*/
+
+.fotos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotos {
+    width: 45%;
+    margin: 2.5%;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.fotos:hover {
+    transform: scale(1.1);
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
+}
+
+#banner-galeria {
+    background-image: url(../img/galeria/banner.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.399);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#banner-galeria h1 {
+    font-size: 5em; 
+}
+
+#banner-galeria p {
+    font-size: 1.3em;
+}
+
+#galeria {
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+}
+
+#galeria h1 {
+    padding: 4%;
+}
+/*Fim de galeria*/
+
+/*Login*/
+#login {
+    width: 100%;
+    height: 95vh;
+    background-image: url('../img/login/fundo.png');
+    background-size: cover;
+    padding: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-caixa {
+    display: flex;
+    width: 50%;
+    height: auto;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #878787;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #354a508b;
+}
+
+#login-caixa h1 {
+    padding: 4%;
+    font-size: 3.2rem;
+}
+
+#rotulo {
+    margin: 2%;
+    font-weight: bold;
+}
+
+#input {
+    width: 70%;
+    font-size: 1.4rem;
+    margin: 0px auto;
+    display: block;
+}
+
+#btn-login {
+    display: inline-block;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 5%;
+    font-size: 2rem;
+    background-color: #083540;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn-login:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
+}
+/*Fim do login*/
+
+/*Inicio de contato*/
+#banner-contato {
+    background-color: #29b0d2;
+    width: 100%;
+    height: 30vh;
+    line-height: 30vh;
+    font-size: 2.5rem;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.399);
+    text-align: center;
+}
+
+#contato {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 10% 10% 10%;
+}
+
+#rotulo-contato {
+    margin: 1%;
+    font-weight: bold;
+}
+
+#input-contato {
+    width: 40%;
+    font-size: 1.2rem;
+    padding: .2%;
+}
+
+#data {
+    width: 40%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .2%;
+}
+
+#btn-enviar {
+    font-size: 1.2rem;
+    width: 20%;
+    margin: 1% 0 0 0;
+    background-color: #1993b2;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 1%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#btn-enviar:hover {
+    transform: scale(1.1);
+    background-color: #24b8dd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
+}
+
+#btn-enviar:active {
+    color: #000;
+}
+
+#btn-reset {
+    font-size: 1.2rem;
+    width: 20%;
+    margin: 1% 0 0 0;
+    background-color: #292929;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 1%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#btn-reset:hover {
+    transform: scale(1.1);
+    background-color: #4b4b4b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.399);
+}
+
+#btn-reset:active {
+    color: #000;
+}
+
+textarea {
+    width: 40%;
+    height: 10vh;
+}
+/*Fim de contato*/
